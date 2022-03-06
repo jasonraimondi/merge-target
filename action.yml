@@ -1,0 +1,15 @@
+name: 'Linear Custom Merge Targets'
+description: 'Helper to move linear tickets to their appropriate workflow based on merge target'
+inputs:
+  branch-workflows:
+    description: 'branch-workflows'
+    required: true
+  github-api-key:
+    description: 'github-api-key'
+    required: true
+  linear-api-key:
+    description: 'linear-api-key'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
